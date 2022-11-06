@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+footer{
+    background-color: black;
+    height: auto;
+    width: 100vw;
+    color: palevioletred;
+}
+
+.footer-content{ 
+    display: flex;
+}
