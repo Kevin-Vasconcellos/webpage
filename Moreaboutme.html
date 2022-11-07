@@ -26,22 +26,35 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 
 
 <body>
+
 <!-- Navbar -->
 <div class="w3-top">
-  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kevin A. Vasconcellos</a>
-    <a href="#" class="w3-bar-item w3-button w3-theme-l1">More about me</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Teaching</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Participations</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Notes</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Publications</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Etcetera</a>
+  <div class="w3-bar w3-theme-d2 w3-left-align">
+   <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+   <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white"><i class="fa fa-home w3-margin-right"></i>Kevin A. Vasconcellos</a>
+   <a href="Moreaboutme.html" class="w3-bar-item w3-button w3-teal ">More about me</a>
+   <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Teaching</a>
+   <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Participations</a>
+   <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Notes</a>
+   <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Publications</a>
+   <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Etcetera</a>
+     </div>
+   </div>
+   <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
   </div>
-
-
-
-</div>
+ 
+   <!-- Navbar on small screens -->
+   <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#" class="w3-bar-item w3-button">More about me</a>
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="index.html" class="w3-bar-item w3-button">Teaching</a>
+     <a href="#pricing" class="w3-bar-item w3-button">Participations</a>
+     <a href="#contact" class="w3-bar-item w3-button">Notes</a>
+     <a href="#contact" class="w3-bar-item w3-button">Publications</a>
+     <a href="#contact" class="w3-bar-item w3-button">Etcetera</a>
+   </div>
+ </div>
+ </div
     <div>
         <h1 align="center" class="w3-text-teal">
             <br>
@@ -73,5 +86,31 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
   <div class="w3-container w3-theme-l2 w3-padding-32">
     <h4>Footer</h4>
   </div>-->
+
+
+  <script>
+    // Script for side navigation
+    function w3_open() {
+      var x = document.getElementById("mySidebar");
+      x.style.width = "300px";
+      x.style.paddingTop = "10%";
+      x.style.display = "block";
+    }
+    
+    // Close side navigation
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+    
+    // Used to toggle the menu on smaller screens when clicking on the menu button
+    function openNav() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+    </script>
 </body>
 </html>
