@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>More about me</title>
+<title>Notes</title>
 <link rel="icon" type="image/x-icon" href="/Imagens/sigma.png">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,7 +21,18 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", Helvetica, sans-serif;}
 .section1{
   background-color: #d9e2d9;
   color: black;
-  padding-left: 10px
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.section1bottom{
+  background-color: #d9e2d9;
+  color: black;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 5px;
 }
 .section2{
   background-color: white;
@@ -30,6 +41,20 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", Helvetica, sans-serif;}
   padding-right: 40px;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+.section2bottom{
+  background-color: white;
+  color: black;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+
+li{
+    margin: 10px 0;
+    list-style-type: square;
 }
 </style>
 </head>
@@ -44,9 +69,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", Helvetica, sans-serif;}
    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white"><i class="fa fa-home w3-margin-right"></i>Home</a>
    <a href="PDFs/More about me/Kevin Alves Vasconcellos CV.pdf" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-hover-white">CV</a>
-   <a href="Moreaboutme.html" class="w3-bar-item w3-button w3-teal ">More about me</a>
+   <a href="Moreaboutme.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">More about me</a>
    <a href="Teaching.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Teaching</a>
-   <a href="Notes.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Notes</a>
+   <a href="Notes.html" class="w3-bar-item w3-button w3-teal">Notes</a>
    <a href="Publications.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Publications</a>
    <a href="Etcetera.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Etcetera</a>
    <div class="w3-dropdown-hover w3-hide-small">
@@ -60,7 +85,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", Helvetica, sans-serif;}
     </div>
      </div>
    </div>
-  
+   
   </div>
  
    <!-- Navbar on small screens -->
@@ -68,50 +93,76 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", Helvetica, sans-serif;}
     <a href="#" class="w3-bar-item w3-button">More about me</a>
     <a href="index.html" class="w3-bar-item w3-button">Home</a>
     <a href="PDFs/More about me/Kevin Alves Vasconcellos CV.pdf" target="_blank" class="w3-bar-item w3-button">CV</a>
-    <a href="Teaching.html" class="w3-bar-item w3-button">Teaching</a> 
+    <a href="index.html" class="w3-bar-item w3-button">Teaching</a> 
      <a href="Notes.html" class="w3-bar-item w3-button">Notes</a>
      <a href="Publications.html" class="w3-bar-item w3-button">Publications</a>
      <a href="Etcetera.html" class="w3-bar-item w3-button">Etcetera</a>
    </div>
  </div>
- </div
+</div>
     <div>
         <h1 align="center" class="w3-text-teal">
             <br>
-            More about me
+            Short Notes
             <br>
           </h1>
     </div>
-  <div class="section2">
+  <div class="section1">
       
-      <h5 align="justify" > I received my M.Sc. degree in Mathematics at Federal University of Rio de Janeiro (UFRJ) under advision of professor Hamid Hassanzadeh. I got grade A on all subjects I coursed, obtaining maximum <a href="https://drive.google.com/file/d/19zVasEfqDmJZo9Ac3aV5oSgj7HyjaLjV/view?usp=sharing" target="_blank">GPA</a>. My Qualification Exam was in <a href="Real.Analysis.html">Real Analysis</a> and my <a href="Dissertation.html">dissertation</a> was based on the article: <a href="PDFs/More about me/A formula for the core of an ideal.pdf" target="_blank">A formula for the core of an ideal</a>, by Polini, C. and Ulrich, B.</h5>
-        <h5 align="justify"> Currently I am Ph.D. student in Mathematics at UFRJ under supervision of professor Hamid Hassanzadeh and Marc Chardin. I got grade A on all subjects I coursed, obtaining maximum GPA. Although my research field continued being Commutative Algebra, I used the first period of my journey on Ph.D. to improve my knowledge in Algebraic Geometry. My <a href="Basic Qualifying Exam.html">Basic Qualifying Exam</a> was in Functional Analysis, and my <a href="Main Qualifying Exam.html">Main Qualifying Exam</a> was in Homological Algebra and Commutative Algebra.</h5>
-        <h5 align="justify" > <a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4839875Z9">Here</a> you can get access to my Lattes CV, a Brazilian system that contains informations about research groups, institutions and researchers who work in Brazil. </h5>
-    </div>
+      <h5 align="justify" >
+      <ul>
+        <li><a href="#" target="_blank">Some solutions of the book</a>: <strong>Ideals, Varieties, and Algorithms: An Introduction to Computational Algebraic Geometry and Commutative Algebra</strong>,
+         by David A. Cox, John Little and Donal O'shea.</li>
+        <li ><a href="PDFs/Notes/Secondary Representation Theory_ The dual of Primary Decomposition Theory.pdf" target="_blank">Secondary Representation Theory: The dual of Primary Decomposition Theory.</a></li>
+        <li><a href="PDFs/Notes/A proof of the Brouwer Fixed Point Theorem.pdf" target="_blank">A proof of the Brouwer Fixed Point Theorem</a>: In this article, we prove the Brouwer Fixed Point Theorem 
+        using tools of the differential topology.</li>
+        <li><a href="PDFs/Notes/A proof for the Hilbert's Nullstellensatz Theorems.pdf" target="_blank">A proof for the Hilbert's Nullstellensatz Theorems</a>: A proof of Hilbert's Nullstellensatz Theorem using the theory of integral
+         closure of rings and valuations rings.</li>
+        <li><a href="PDFs/Notes/Closed Graph Theorems.pdf" target="_blank">Closed Graph Theorems</a>. This article contains versions in different categories of the so called Closed Graph Theorem.</li>
+        <li><a href="PDFs/Notes/Weakly Associated Primes.pdf" target="_blank">Weakly Associated Primes</a>.</li>
+    </ul>
+</h5>
+        </div>
+        <div>
+            <h1 align="center" class="w3-text-teal">
+                Seminaries and notes of coursed subjects
+                <br>
+              </h1>
+        </div>
+      <div class="section1">
+          
+          <h5 align="justify">
+          <ul>
+            <li > <a href="PDFs/Notes/Tensors and Forms.pdf" target="_blank">Tensors and Forms</a>: Seminary of the subject: Differential Topology - UFRJ, 2022.</li>
+            <li><a href="PDFs/Notes/Advanced Linear Algebra.pdf" target="_blank">Advanced Linear Algebra</a>: Compiled of all exercises and their solutions of this course.</li>
+            <li><a href="PDFs/Notes/Functional Analysis - Classes Exercises.pdf" target="_blank">Functional analysis notes</a>: Some exercises of the subject: Functional Analysis I - UFRJ, 2021.</li>
+            <li><a href="PDFs/Notes/Geometric Hahn-Banach Theorem.pdf" target="_blank">Geometric Hahn-Banach Theorem</a>: Seminary of the subject: Functional Analysis I - UFRJ, 2021.</li>
+            <li><a href="PDFs/Notes/Algebraic Number Fields.pdf" target="_blank">Some solutions of the book</a>: <strong>Algebraic Number Fields</strong>, by Gerald J. Janusz.</li>
+            <li><a href="PDFs/Notes/Application of the Kronecker bound in ideal class group calculation (1).pdf" target="_blank">Application of the Kronecker bound in the ideal class group calculation:</a> Seminary of the subject: Algebraic Number Theory - UFRJ, 2021.</li>
+            <li><a href="PDFs/Notes/Curvas Polares e Hessianas.pdf" target="_blank">Polar and Hessian curves</a>: Seminary of the subject: Algebraic Curves - UFRJ, 2020.</li>
+        </ul>
+    </h5>
+            </div>
+
+        <footer class="footer">
+            <p align="center">E-mail: 
+            <a href=mailto: "kevin.lamav.math@gmail.com"> kevin.lamav.math"at"gmail.com </a>
+            <br>
+            <br>
+            Fell free to contact me.
+            </p>
+          </div>
+        </footer>
+ 
+        
 <!-- END MAIN -->
 </div>
 <!--<p class="w3-border w3-padding-large w3-padding-32 w3-center">   <div class="w3-third w3-container">-->
-<p>
-  <br>
-  <br>
-  <br>
-  <br>
-</p> 
-<footer class="footer">
-    <p align="center">E-mail: 
-    <a href=mailto: "kevin.lamav.math@gmail.com"> kevin.lamav.math"at"gmail.com </a>
-    <br>
-    <br>
-    Fell free to contact me.
-    </p>
-  </div>
-</footer>
+
 <!--<footer id="myFooter">
   <div class="w3-container w3-theme-l2 w3-padding-32">
     <h4>Footer</h4>
   </div>-->
-
-
   <script>
     // Script for side navigation
     function w3_open() {
